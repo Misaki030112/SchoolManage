@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b5df48-2270-4b0a-be46-ba0035d3f95c" name="变更" comment="项目上传">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="e3b5df48-2270-4b0a-be46-ba0035d3f95c" name="变更" comment="配置改变">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,7 @@
       <workItem from="1641041515135" duration="3051000" />
       <workItem from="1641045076007" duration="4000" />
       <workItem from="1641045212699" duration="5171000" />
-      <workItem from="1641051181210" duration="465000" />
+      <workItem from="1641051181210" duration="525000" />
     </task>
     <task id="LOCAL-00001" summary="项目上传">
       <created>1641051444095</created>
@@ -186,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641051444095</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="配置改变">
+      <created>1641051728446</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641051728446</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +217,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目上传" />
+    <MESSAGE value="配置改变" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置改变" />
   </component>
 </project>
