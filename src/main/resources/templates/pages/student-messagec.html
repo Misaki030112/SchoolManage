@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人概况页面</title>
+    <div th:replace="~{student-menu :: menu-link}"></div>
+</head>
+<body>
+<div th:replace="~{student-menu :: left-menu}"></div>
+<div class="directory-info-row" style="margin-left: 280px;margin-top: 90px;">
+    <div class="col-md-6 col-sm-6">
+        <div class="panel">
+            <div class="panel-body">
+                <h4>用户信息 <span class="text-muted small"> --学生管理系统（学生端）</span></h4>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="thumb media-object" src="images/photos/user2.png" alt="">
+                    </a>
+                    <div class="media-body">
+                        <address>
+                            <strong th:text="${student.getName()}"></strong><br>
+                            杭州师范大学学生<br>
+                            用户名 <span th:text="${student.getUsername()}"></span> <br>
+                            <abbr title="Phone">学号</abbr> <span th:text="${student.getStudentId()}"></span>                            <abbr title="Phone">学号</abbr> <span th:text="${student.getStudentId()}"></span>
+                            <abbr title="Phone">班级</abbr> <span th:text="计算机20+${student.getClassId()}+班"></span>
+
+                        </address>
+                        <ul class="social-links">
+                            <li><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Skype"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/modernizr.min.js"></script>
+<script src="/js/jquery.nicescroll.js"></script>
+
+
+<!--common scripts for all pages-->
+<script src="/js/scripts.js"></script>
+<script>
+    $('.menu-list:eq(2)').addClass("nav-active");
+    $('.menu-list:eq(2) li:eq(0)').addClass("active");
+</script>
+</body>
+</html>

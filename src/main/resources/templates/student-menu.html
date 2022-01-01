@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生</title>
+
+    <!--icheck-->
+    <div th:fragment="menu-link">
+
+    <link href="/js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+    <link href="/js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="/js/iCheck/skins/square/red.css" rel="stylesheet">
+    <link href="/js/iCheck/skins/square/blue.css" rel="stylesheet">
+
+    <!--dashboard calendar-->
+    <link href="/css/clndr.css" rel="stylesheet">
+
+
+    <!--common-->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style-responsive.css" rel="stylesheet">
+    </div>
+</head>
+
+<body>
+
+    <div class="left-side sticky-left-side" th:fragment="left-menu">
+
+        <div class="logo">
+            <a href="/student/grade/c"><img src="/images/logo.png" alt=""></a>
+        </div>
+        <div class="left-side-inner">
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="menu-list"><a href=""><i class="fa fa-home"></i> <span>我的成绩</span></a>
+                    <ul class="sub-menu-list">
+                        <li class="active"><a href="/student/grade/c">成绩查询</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href=""><i class="fa fa-laptop"></i> <span>我的课表</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="/student/course/c">课表查询</a></li>
+                    </ul>
+                </li>
+                <li class="menu-list"><a href=""><i class="fa fa-book"></i> <span>个人信息</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="/student/message/c"> 个人概况</a></li>
+                        <li><a href="/student/message/u"> 修改密码</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/student/logout"><i class="fa fa-sign-in"></i> <span>退出登录</span></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div th:fragment="student-script">
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/modernizr.min.js"></script>
+    <script src="/js/jquery.nicescroll.js"></script>
+
+    <!--easy pie chart-->
+    <script src="/js/easypiechart/jquery.easypiechart.js"></script>
+    <script src="/js/easypiechart/easypiechart-init.js"></script>
+
+    <!--Sparkline Chart-->
+    <script src="/js/sparkline/jquery.sparkline.js"></script>
+    <script src="/js/sparkline/sparkline-init.js"></script>
+
+    <!--icheck -->
+    <script src="/js/iCheck/jquery.icheck.js"></script>
+    <script src="/js/icheck-init.js"></script>
+
+    <!-- jQuery Flot Chart-->
+    <script src="/js/flot-chart/jquery.flot.js"></script>
+    <script src="/js/flot-chart/jquery.flot.tooltip.js"></script>
+    <script src="/js/flot-chart/jquery.flot.resize.js"></script>
+    <script src="/js/flot-chart/jquery.flot.pie.resize.js"></script>
+    <script src="/js/flot-chart/jquery.flot.selection.js"></script>
+    <script src="/js/flot-chart/jquery.flot.stack.js"></script>
+    <script src="/js/flot-chart/jquery.flot.time.js"></script>
+    <script src="/js/main-chart.js"></script>
+
+    <!--common scripts for all pages-->
+    <script src="/js/scripts.js"></script>
+    </div>
+</body>
+
+</html>

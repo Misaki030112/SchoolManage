@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>成绩概况</title>
+    <link href="/js/c3-chart/c3.css" rel="stylesheet"/>
+    <div th:replace="~{teacher-menu :: menu-link}"></div>
+</head>
+<body>
+<div th:replace="~{teacher-menu :: left-menu}"></div>
+
+<div style="display: flex;margin-left: 240px;padding:0 50px; margin-top: 80px;flex-wrap:wrap;align-items: stretch;" >
+    <div class="row" th:each="ord:${order}">
+        <div class="col-md-12" style="width:300px ;margin-right:20px" >
+            <section class="panel">
+                <header class="panel-heading">
+                    <span th:text="${ord.key}">学科</span>  <span class="text-muted">分数排名表</span>
+                    <span class="tools pull-right">
+                            <a class="fa fa-chevron-down" href="javascript:;"></a>
+                            <a class="fa fa-times" href="javascript:;"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                        <li th:each="list:${ord.value}">
+                            <span th:text="${list}"></span>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper" style="margin-left: 240px">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    数据结构成绩分布
+                    <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                    <div class="chart">
+                        <div id="roated-chart1"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<div class="wrapper" style="margin-left: 240px">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    操作系统成绩分布
+                    <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                    <div class="chart">
+                        <div id="roated-chart2"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<div class="wrapper" style="margin-left: 240px">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    计算机组成原理成绩分布
+                    <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                    <div class="chart">
+                        <div id="roated-chart3"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<div class="wrapper" style="margin-left: 240px">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    计算机网络成绩分布
+                    <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                    <div class="chart">
+                        <div id="roated-chart4"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<div class="wrapper" style="margin-left: 240px">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    c语言程序设计成绩分布
+                    <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                    <div class="chart">
+                        <div id="roated-chart5"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+<div class="wrapper" style="margin-left: 240px">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    java程序设计成绩分布
+                    <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span>
+                </header>
+                <div class="panel-body">
+
+                    <div class="chart">
+                        <div id="roated-chart6"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/modernizr.min.js"></script>
+<script src="/js/jquery.nicescroll.js"></script>
+
+<!--C3 Chart-->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="/js/c3-chart/c3.js"></script>
+<script src="/js/c3-chart/c3-chart.init.js"></script>
+<!--common scripts for all pages-->
+<script src="/js/scripts.js"></script>
+<script>
+    $('.menu-list:eq(0)').addClass("nav-active");
+    $('.menu-list:eq(0) li:eq(0)').addClass("active");
+</script>
+</body>
+</html>

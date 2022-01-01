@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql:///schooldemo
+      username: root
+      password: WSY167294385s
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true  #展示SQL语句
+    generate-ddl: true  #是否自动建表
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    database-platform: schooldemo
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+

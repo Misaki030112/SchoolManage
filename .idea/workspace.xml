@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3b5df48-2270-4b0a-be46-ba0035d3f95c" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2254e9X72D3v7C9jIMy7ntUs0wY" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="center.misaki.schoolgrade.Service.Impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\templates" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\static" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\static\css" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\static\images" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\static" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\static\images" />
+      <recent name="C:\Users\Misaki\IdeaProjects\SchoolGrade\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="center.misaki.schoolgrade.Utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SchoolGradeApplication">
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" requestIdentifier="#8" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests中的所有" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="SchoolGradeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SchoolGrade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="center.misaki.schoolgrade.SchoolGradeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP 请求.generated-requests中的所有" />
+        <item itemvalue="HTTP 请求.generated-requests | #8" />
+        <item itemvalue="HTTP 请求.generated-requests | #7" />
+        <item itemvalue="HTTP 请求.generated-requests | #6" />
+        <item itemvalue="HTTP 请求.generated-requests | #2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e3b5df48-2270-4b0a-be46-ba0035d3f95c" name="变更" comment="" />
+      <created>1639114209310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639114209310</updated>
+      <workItem from="1639114211300" duration="2508000" />
+      <workItem from="1639117748289" duration="378000" />
+      <workItem from="1639120268426" duration="3187000" />
+      <workItem from="1639145297612" duration="1965000" />
+      <workItem from="1639147307833" duration="3340000" />
+      <workItem from="1639471247152" duration="37000" />
+      <workItem from="1639718541616" duration="1060000" />
+      <workItem from="1639719893420" duration="1253000" />
+      <workItem from="1639815114581" duration="4784000" />
+      <workItem from="1640047412170" duration="6594000" />
+      <workItem from="1640088382996" duration="7473000" />
+      <workItem from="1640155251835" duration="1763000" />
+      <workItem from="1640184037472" duration="1295000" />
+      <workItem from="1640218126969" duration="3481000" />
+      <workItem from="1640246156893" duration="2111000" />
+      <workItem from="1640260847102" duration="870000" />
+      <workItem from="1640323190700" duration="3244000" />
+      <workItem from="1640326484409" duration="5159000" />
+      <workItem from="1640585938553" duration="8950000" />
+      <workItem from="1640682071052" duration="7043000" />
+      <workItem from="1640704739747" duration="1252000" />
+      <workItem from="1640746453008" duration="1839000" />
+      <workItem from="1640765057271" duration="75000" />
+      <workItem from="1640932413465" duration="11608000" />
+      <workItem from="1640944528856" duration="781000" />
+      <workItem from="1641001913641" duration="7702000" />
+      <workItem from="1641012654133" duration="13412000" />
+      <workItem from="1641029739416" duration="2437000" />
+      <workItem from="1641041515135" duration="3051000" />
+      <workItem from="1641045076007" duration="4000" />
+      <workItem from="1641045212699" duration="5171000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,96 @@
+GET http://localhost:8081/teacher/grade/d
+
+<> 2022-01-01T173635-2.200.html
+
+###
+
+GET http://localhost:8081/teacher/grade/order
+
+<> 2022-01-01T173635-1.200.html
+
+###
+
+GET http://localhost:8081/teacher/grade/detail
+
+<> 2022-01-01T173635.200.html
+
+###
+
+GET http://localhost:8081/admin/teacher/u
+
+<> 2022-01-01T173634-6.200.html
+
+###
+
+GET http://localhost:8081/admin/studnt/u
+
+<> 2022-01-01T173634-5.200.html
+
+###
+
+GET http://localhost:8081/admin/course/c
+
+<> 2022-01-01T173634-4.200.html
+
+###
+
+GET http://localhost:8081/admin/course/c
+
+<> 2022-01-01T173634-3.200.html
+
+###
+
+GET http://localhost:8081/admin/gradeModify
+
+<> 2022-01-01T173634-2.200.html
+
+###
+
+GET http://localhost:8081/admin/gradeSelect
+
+<> 2022-01-01T173634-1.200.html
+
+###
+
+GET http://localhost:8081/admin/gradeSelect
+
+<> 2022-01-01T173634.200.html
+
+###
+
+GET http://localhost:8081/admin/gradeModify
+
+###
+
+GET http://localhost:8081/admin/gradeSelect
+
+###
+
+GET http://localhost:8081/admin/gradeSelect
+
+###
+
+GET http://localhost:8081/teacher/grade/detail
+
+<> 2022-01-01T095328.200.json
+
+###
+
+GET http://localhost:8081/admin/teacher/u
+
+<> 2021-12-29T105622.200.html
+
+###
+
+GET http://localhost:8081/admin/studnt/u
+
+<> 2021-12-28T172837.200.html
+
+###
+
+GET http://localhost:8081/admin/gradeSelect
+
+<> 2021-12-24T132403.200.html
+
+###
+

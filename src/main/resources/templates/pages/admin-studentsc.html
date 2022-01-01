@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>学生查询界面</title>
+    <link href="/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/js/data-tables/DT_bootstrap.css" />
+    <div th:replace="~{admin-menu :: menu-link}"></div>
+</head>
+<body>
+<div th:replace="~{admin-menu :: left-menu}"></div>
+<div class="wrapper" style="margin-left: 260px;margin-top: 80px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    所有学生
+                    <span class="tools pull-right">
+                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                <a href="javascript:;" class="fa fa-times"></a>
+             </span>
+                </header>
+                <div class="panel-body">
+                    <div class="adv-table">
+                        <table  class="display table table-bordered table-striped" id="dynamic-table">
+                            <thead>
+                            <tr>
+                                <th>年级</th>
+                                <th >姓名</th>
+                                <th >学号</th>
+                                <th>班级</th>
+                                <th >用户名</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="gradeX"  th:each="studnts:${allStudents}">
+                                <td th:text="${studnts.getGrade_level()}">20210001</td>
+                                <td th:text="${studnts.getName()}">汪世胤</td>
+                                <td th:text="${studnts.getStudentId()}">2020211301052</td>
+                                <td th:text="计算机20+${studnts.getClassId()}">汪世胤</td>
+                                <td th:text="${studnts.getUsername()}">用户名</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/modernizr.min.js"></script>
+<script src="/js/jquery.nicescroll.js"></script>
+
+<!--dynamic table-->
+<script type="text/javascript" language="javascript" src="/js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/js/data-tables/DT_bootstrap.js"></script>
+<!--dynamic table initialization -->
+<script src="/js/dynamic_table_init.js"></script>
+
+<!--common scripts for all pages-->
+<script src="/js/scripts.js"></script>
+<script>
+    $('.menu-list:eq(2)').addClass("nav-active");
+    $('.menu-list:eq(2) li:eq(0)').addClass("active");
+</script>
+</body>
+</html>

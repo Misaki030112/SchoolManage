@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+    <link href="/js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/js/data-tables/DT_bootstrap.css" />
+    <div th:replace="~{teacher-menu :: menu-link}"></div>
+    <title>成绩查询页面</title>
+</head>
+<body>
+<div th:replace="~{teacher-menu :: left-menu}"></div>
+<div class="wrapper" style="margin-left: 260px;margin-top: 80px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    总体学生成绩
+                    <span class="tools pull-right">
+                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                <a href="javascript:;" class="fa fa-times"></a>
+             </span>
+                </header>
+                <div class="panel-body">
+                    <div class="adv-table">
+                        <table  class="display table table-bordered table-striped" id="dynamic-table">
+                            <thead>
+                            <tr>
+                                <th>课程名称</th>
+                                <th>课程代码</th>
+                                <th >学生姓名</th>
+                                <th >成绩</th>
+                                <th >学生学号</th>
+                                <th >任课老师</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="gradeX"  th:each="grade:${AllGrades}">
+                                <td th:text="${grade.getCourseName()}">数据结构</td>
+                                <td th:text="${grade.getCourseCode()}">20210001</td>
+                                <td th:text="${grade.getStudentName()}">汪世胤</td>
+                                <td th:text="${grade.getGrade()}">100</td>
+                                <td th:text="${grade.getStudentId()}">2020211301052</td>
+                                <td th:text="${grade.getCourseTeacher()}">汪世胤</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/modernizr.min.js"></script>
+<script src="/js/jquery.nicescroll.js"></script>
+
+<!--dynamic table-->
+<script type="text/javascript" language="javascript" src="/js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/js/data-tables/DT_bootstrap.js"></script>
+<!--dynamic table initialization -->
+<script src="/js/dynamic_table_init.js"></script>
+
+<!--common scripts for all pages-->
+<script src="/js/scripts.js"></script>
+<script>
+    $('.menu-list:eq(0)').addClass("nav-active");
+    $('.menu-list:eq(0) li:eq(1)').addClass("active");
+</script>
+</body>
+</html>
