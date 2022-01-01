@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3b5df48-2270-4b0a-be46-ba0035d3f95c" name="变更" comment="配置改回">
+    <list default="true" id="e3b5df48-2270-4b0a-be46-ba0035d3f95c" name="变更" comment="2022.1.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/c3-chart/c3-chart.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/c3-chart/c3-chart.init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/teacher-graded.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/teacher-graded.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +27,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -179,7 +180,7 @@
       <workItem from="1641045076007" duration="4000" />
       <workItem from="1641045212699" duration="5171000" />
       <workItem from="1641051181210" duration="562000" />
-      <workItem from="1641051997302" duration="1730000" />
+      <workItem from="1641051997302" duration="3250000" />
     </task>
     <task id="LOCAL-00001" summary="项目上传">
       <created>1641051444095</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641051754989</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2022.1.2">
+      <created>1641054028748</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641054028748</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +237,7 @@
     <MESSAGE value="项目上传" />
     <MESSAGE value="配置改变" />
     <MESSAGE value="配置改回" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置改回" />
+    <MESSAGE value="2022.1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022.1.2" />
   </component>
 </project>
