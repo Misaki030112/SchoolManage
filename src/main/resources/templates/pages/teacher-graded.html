@@ -183,14 +183,140 @@
 <script src="/js/jquery.nicescroll.js"></script>
 
 <!--C3 Chart-->
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="/js/c3-chart/c3.js"></script>
-<script src="/js/c3-chart/c3-chart.init.js"></script>
-<!--common scripts for all pages-->
-<script src="/js/scripts.js"></script>
+
 <script>
     $('.menu-list:eq(0)').addClass("nav-active");
     $('.menu-list:eq(0) li:eq(0)').addClass("active");
+
+    $.ajax({
+            url: 'http://localhost:8081/teacher/grade/graph',
+            type: 'POST',
+            success:function (data) {
+                console.log(data)
+                $(function () {
+                    var chart = c3.generate({
+                        bindto: '#roated-chart1',
+                        data: {
+                            columns: [
+                                Object.values(data[0])
+                            ],
+                            types: {
+                                "数据结构": 'bar'
+                            }
+                        },
+                        axis: {
+                            rotated: true,
+                            x: {
+                                type: 'categorized'
+                            }
+                        }
+                    });
+                });
+                $(function () {
+                    var chart = c3.generate({
+                        bindto: '#roated-chart2',
+                        data: {
+                            columns: [
+                                Object.values(data[1])
+                            ],
+                            types: {
+                                "操作系统": 'bar'
+                            }
+                        },
+                        axis: {
+                            rotated: true,
+                            x: {
+                                type: 'categorized'
+                            }
+                        }
+                    });
+                });
+                $(function () {
+                    var chart = c3.generate({
+                        bindto: '#roated-chart3',
+                        data: {
+                            columns: [
+                                Object.values(data[2])
+                            ],
+                            types: {
+                                "计算机组成原理": 'bar'
+                            }
+                        },
+                        axis: {
+                            rotated: true,
+                            x: {
+                                type: 'categorized'
+                            }
+                        }
+                    });
+                });
+                $(function () {
+                    var chart = c3.generate({
+                        bindto: '#roated-chart4',
+                        data: {
+                            columns: [
+                                Object.values(data[3])
+                            ],
+                            types: {
+                                "计算机网络": 'bar'
+                            }
+                        },
+                        axis: {
+                            rotated: true,
+                            x: {
+                                type: 'categorized'
+                            }
+                        }
+                    });
+                });
+                $(function () {
+                    var chart = c3.generate({
+                        bindto: '#roated-chart5',
+                        data: {
+                            columns: [
+                                Object.values(data[4])
+                            ],
+                            types: {
+                                "C语言程序设计": 'bar'
+                            }
+                        },
+                        axis: {
+                            rotated: true,
+                            x: {
+                                type: 'categorized'
+                            }
+                        }
+                    });
+                });
+                $(function () {
+                    var chart = c3.generate({
+                        bindto: '#roated-chart6',
+                        data: {
+                            columns: [
+                                Object.values(data[5])
+                            ],
+                            types: {
+                                "Java程序设计": 'bar'
+                            }
+                        },
+                        axis: {
+                            rotated: true,
+                            x: {
+                                type: 'categorized'
+                            }
+                        }
+                    });
+                });
+            }
+        }
+    )
+
+
+
 </script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="/js/c3-chart/c3.js"></script>
+<!--common scripts for all pages-->
+<script src="/js/scripts.js"></script>
 </body>
 </html>
