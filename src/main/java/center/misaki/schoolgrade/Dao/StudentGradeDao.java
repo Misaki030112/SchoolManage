@@ -34,6 +34,4 @@ public interface StudentGradeDao extends JpaRepository<StudentGrade,Integer> {
     List<StudentGrade> findByStudentId(String StudentId);
 
 
-
-
 }

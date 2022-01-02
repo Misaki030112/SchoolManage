@@ -35,6 +35,11 @@ public class GradeServiceImpl implements GradeService {
     }
 
     @Override
+    public void AddStudentGrade(StudentGrade grade) {
+        studentGradeDao.save(grade);
+    }
+
+    @Override
     public void DeleteStudentGrade(Grade grade) {
         StudentGrade byStudentIdAndCourseCode = studentGradeDao.findByStudentIdAndCourseCode(grade.getStudentId(),grade.getCourseCode());
         studentGradeDao.delete(byStudentIdAndCourseCode);
@@ -108,6 +113,12 @@ public class GradeServiceImpl implements GradeService {
     @Override
     public List<StudentGrade> getStudentGradeByStudentId(String studentId) {
         return studentGradeDao.findByStudentId(studentId);
+    }
+
+    @Override
+    public boolean isHave(Grade grade) {
+        StudentGrade studentGrade = studentGradeDao.findByStudentIdAndCourseCode(grade.getStudentId(), grade.getCourseCode());
+        return studentGrade != null;
     }
 
 

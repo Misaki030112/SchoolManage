@@ -1,5 +1,6 @@
 package center.misaki.schoolgrade.Controller;
 
+import center.misaki.schoolgrade.Domain.Grade;
 import center.misaki.schoolgrade.Pojo.StudentGrade;
 import center.misaki.schoolgrade.Pojo.SysCourse;
 import center.misaki.schoolgrade.Pojo.Teacher;
@@ -67,6 +68,21 @@ public class TeacherController {
         return "pages/teacher-gradeu";
     }
 
+    @ResponseBody
+    @PostMapping("/teacher/gradeModify/ing")
+    public String teacherModify(HttpSession session, Grade grade){
+        if(gradeService.isHave(grade)){
+            gradeService.ModifyStudentGrade(grade);
+            return "修改成功！";
+        }else{
+            String teacherName = (String) session.getAttribute("teacherName");
+            StudentGrade studentGrade = new StudentGrade();
+            studentGrade.setGrade(grade.getGrade()).setCourseTeacher(teacherName).setCourseCode(grade.getCourseCode()).setCourseName(grade.getCourseName())
+                            .setStudentId(grade.getStudentId()).setStudentName(grade.getStudentName());
+            gradeService.AddStudentGrade(studentGrade);
+        }
+        return "添加成功!";
+    }
 
     @RequestMapping("/teacher/course/c")
     public String teacherCourseC(HttpSession session,Model model){
@@ -74,6 +90,12 @@ public class TeacherController {
         List<SysCourse> allCourses = courseService.getAllCoursesByTeacher(teacherName);
         model.addAttribute("allCourses",allCourses);
         return "pages/teacher-coursec";
+    }
+    @ResponseBody
+    @PostMapping("/teacher/gradeModify/del")
+    public String gradeDelete(Grade grade){
+        gradeService.DeleteStudentGrade(grade);
+        return "删除成功！";
     }
 
 

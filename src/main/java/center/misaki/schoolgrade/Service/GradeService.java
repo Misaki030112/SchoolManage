@@ -15,6 +15,9 @@ public interface GradeService {
     //修改一个成绩
     void ModifyStudentGrade(Grade grade);
 
+    //添加一条成绩
+    void AddStudentGrade(StudentGrade grade);
+
     //删除一个成绩
     void DeleteStudentGrade(Grade grade);
 
@@ -32,5 +35,8 @@ public interface GradeService {
 
     //根据学生学号返回这个学生的所有成绩
     List<StudentGrade> getStudentGradeByStudentId(String studentId);
+
+    //判断是否有这一条成绩记录
+    boolean isHave(Grade grade);
 
 }

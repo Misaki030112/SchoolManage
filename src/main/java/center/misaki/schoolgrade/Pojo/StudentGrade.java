@@ -1,12 +1,14 @@
 package center.misaki.schoolgrade.Pojo;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 
 @Data
 @Table
 @Entity
+@Accessors(chain = true)
 public class StudentGrade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
